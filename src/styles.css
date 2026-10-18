@@ -170,8 +170,20 @@ button.chip { cursor: pointer; }.chip.chosen { color: #335e46; background: #eaf1
 .article-content table { display: block; max-width: 100%; overflow-x: auto; border-collapse: collapse; }
 .article-content th,.article-content td { padding: 8px 10px; border: 1px solid #e5e0d6; }
 .original-article-link { margin-top: 18px; }
+.profile-page-heading { margin-bottom: 18px; }
+.profile-page-heading h1 { margin: 0; font-size: 26px; font-weight: 500; }
+.profile-card { width: min(100%, 560px); margin: 0 auto; padding: 24px; display: flex; align-items: center; gap: 24px; border: 1px solid #e5e0d6; border-radius: 12px; background: #fff; }
+.profile-photo-frame { position: relative; width: 150px; height: 150px; flex: 0 0 auto; overflow: hidden; display: grid; place-items: center; border: 1px dashed #c9c1b3; border-radius: 10px; background: #f7f5ef; color: #8a8479; }
+.profile-photo-frame img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.profile-photo-frame img:not([hidden]) ~ .profile-photo-placeholder { display: none; }
+.profile-photo-placeholder { font-size: 12px; }
+.profile-info { display: grid; gap: 18px; }
+.profile-label { color: #8a8479; font-size: 11px; }
+.profile-info h2,.profile-info p { margin: 4px 0 0; font-size: 15px; font-weight: 500; }
 @media (max-width: 760px) {
   .main-nav { display: flex; overflow-x: auto; }
   .nav-link { flex: 0 0 auto; padding: 0 8px; }
+  .profile-card { gap: 16px; padding: 18px; }
+  .profile-photo-frame { width: 112px; height: 112px; }
 }
 
